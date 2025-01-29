@@ -1,0 +1,11 @@
+[
+	{
+					"Email": "neilfs13@gmail.com",
+					"Password": "TestSelenium123",
+					"ProductA": "IPHONE 13 PRO",
+					"ProductB": "BANARSI SAREE",
+					"InvalidProductA": "IPHONE 14 PRO",
+					"InvalidProductB": "TSHIRT",
+					"InvalidEmail": "neilfs13122@gmail.com"
+	}
+]

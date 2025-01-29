@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="suit">
+
+<listeners>
+<listener class-name = "Neil.TestComponent.Listeners"/>
+</listeners>
+  <test thread-count="5" name="Place Order Test">
+    <classes>
+      <class name="Neil.PlaceOrderTestCase"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="Error Validations Test">
+  <classes>
+  	<class name="Neil.ErrorValidationsTestCase"/>
+  </classes>
+  </test>
+</suite> <!-- Suite -->
