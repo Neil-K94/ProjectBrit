@@ -6,7 +6,7 @@
 </listeners>
   <test thread-count="5" name="Error Validations Test">
   <classes>
-  	<class name="Neil.ErrorValidationsTestCase"/>
+  	<class name="Neil.BritInsuranceTestCase"/>
   </classes>
   </test>
 </suite> <!-- Suite -->
