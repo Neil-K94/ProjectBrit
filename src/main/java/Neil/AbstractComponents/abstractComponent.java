@@ -10,8 +10,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import Neil.pageObjects.orderPage;
-
 public class abstractComponent {
 	
 	WebDriver driver;
@@ -50,10 +48,5 @@ public class abstractComponent {
 	public void gotoCartPage()
 	{
 		cartHeaderButton.click();
-	}
-	public orderPage gotoOrdersPage()
-	{
-		ordersHeaderButton.click();
-		return new orderPage(driver);
 	}
 }

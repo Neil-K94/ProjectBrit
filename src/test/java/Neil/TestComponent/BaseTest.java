@@ -24,13 +24,13 @@ import org.testng.annotations.BeforeMethod;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import Neil.pageObjects.landingPage;
+import Neil.pageObjects.BritInsurance;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
 	
 		public WebDriver driver;
-		protected landingPage landpg;
+		protected BritInsurance britLandingPage;
 		
 		public WebDriver initialiseDriver() throws IOException
 		{
@@ -68,11 +68,11 @@ public class BaseTest {
 		}
 		
 		@BeforeMethod(alwaysRun = true)
-		public landingPage launchApplication() throws IOException
+		public BritInsurance launchApplication() throws IOException
 		{
 			driver = initialiseDriver();
-			landpg =  new landingPage(driver);
-			return landpg;
+			britLandingPage = new BritInsurance(driver);
+			return britLandingPage;
 		}
 
 		@AfterMethod(alwaysRun =  true)
@@ -90,7 +90,7 @@ public class BaseTest {
 			ObjectMapper mapper = new ObjectMapper();
 			List<HashMap<String, String>> data = mapper.readValue(jsoncontent, new TypeReference<List<HashMap<String, String>>>() {
 			});
-			return data;	
+			return data;
 		}
 		
 		public String getScreenShot(String testCaseName, WebDriver driver) throws IOException
