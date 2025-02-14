@@ -83,7 +83,7 @@ public class BritInsuranceTestCaseAPI {
         Assert.assertEquals(objResponse.jsonPath().getFloat("data.price"), 1999.99f);
     }
 
-    // ❌ Test: Update with invalid ID
+    // Negative Test using invalid id to update
     @Test(priority = 3)
     public void testUpdateWithInvalidId() {
         JSONObject objRequestBody = new JSONObject();
@@ -93,7 +93,7 @@ public class BritInsuranceTestCaseAPI {
             .contentType(ContentType.JSON)
             .body(objRequestBody.toJSONString())
             .when()
-            .patch("/objects/99999")  // Invalid ID
+            .patch("/objects/99999") 
             .then()
             .statusCode(404);
     }
