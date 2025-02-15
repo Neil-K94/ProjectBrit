@@ -27,17 +27,17 @@ API Automation Testing using Cucumber, Rest Assured
 ## Test Scripts
 
 Test Scrips are located under : 
- > src/test/java/Neil.StepDefinition
+ > src/test/java/cucumber.StepDefinition
     1.BritnInsuranceTestCaseAPI.java
     2.BritnInsuranceTestCaseUI.java
 
 Page Object Model folder structre is kept to prepare all the action methods and is located under :
-> src/main/java/Neil.PageObjects
+> src/main/java/selenium.PageObjects
 
 
 All the Scenarios was developed in the Cucumber Feature file which is located in : 
 
->   src/test/java/Cucumber
+>   src/test/java/cucumber
     1.BritInsurance.feature
     2.BritInsuranceAPI.feature
 ## Running Tests
@@ -54,7 +54,7 @@ All the Scenarios was developed in the Cucumber Feature file which is located in
 ```
 3️⃣Run Tests Using TestNG Runner
 
-    Open src\test\java\Cucumber
+    Open src\test\java\cucumber
     Open TestNgTestRunner.java
     Right-click and select "Run as TestNG Test"
 

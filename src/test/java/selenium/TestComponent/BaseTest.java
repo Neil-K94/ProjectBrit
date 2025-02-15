@@ -1,4 +1,4 @@
-package Neil.TestComponent;
+package selenium.TestComponent;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -24,8 +24,8 @@ import org.testng.annotations.BeforeMethod;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import Neil.PageObjects.BritInsurance;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import selenium.PageObjects.BritInsurance;
 
 public class BaseTest {
 	
@@ -39,7 +39,7 @@ public class BaseTest {
 			//properties class
 			Properties prop = new Properties();
 			FileInputStream fileInput = new FileInputStream(System.getProperty("user.dir")
-					+ "\\src\\main\\java\\Neil\\Resources\\GlobalProperties.properties");
+					+ "\\src\\main\\java\\selenium\\Resources\\GlobalProperties.properties");
 			prop.load(fileInput);
 			
 			String browserName = System.getProperty("browser")!=null ? System.getProperty("browser") : prop.getProperty("browser");

@@ -1,4 +1,4 @@
-package Neil.PageObjects;
+package selenium.PageObjects;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import Neil.AbstractComponents.AbstractComponent;
+import selenium.abstractComponents.*;
 
 
 public class BritInsurance extends AbstractComponent{

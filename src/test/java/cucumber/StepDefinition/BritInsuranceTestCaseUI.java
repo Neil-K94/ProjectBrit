@@ -1,4 +1,4 @@
-package Neil.StepDefinition;
+package cucumber.StepDefinition;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -7,12 +7,12 @@ import java.util.Map;
 
 import org.testng.Assert;
 
-import Neil.PageObjects.*;
-import Neil.TestComponent.BaseTest;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import selenium.PageObjects.*;
+import selenium.TestComponent.BaseTest;
 
 public class BritInsuranceTestCaseUI extends BaseTest{
 

@@ -1,4 +1,4 @@
-package Neil.AbstractComponents;
+package selenium.abstractComponents;
 
 import java.time.Duration;
 
