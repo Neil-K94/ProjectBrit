@@ -21,6 +21,7 @@ public class Listeners extends BaseTest implements ITestListener {
 	ExtentReports extent = ExtendReportNG.getReportObject();
 	ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>(); //This is used to fix concurrency issue while the test runs in parallel
 	@Override
+	//Log is added to the report whenever the test case is started
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
 		test = extent.createTest(result.getMethod().getMethodName());
@@ -28,11 +29,13 @@ public class Listeners extends BaseTest implements ITestListener {
 	}
 
 	@Override
+	//Log is added to the report whenever the test case is Success
 	public void onTestSuccess(ITestResult result) {
 		extentTest.get().log(Status.PASS, "Test Passed");
 	}
 
 	@Override
+	////Log is added to the report whenever the test case is Failed and a screen shot is attached to the report
 	public void onTestFailure(ITestResult result) {
 		extentTest.get().log(Status.FAIL, "Test Failed");
 		extentTest.get().fail(result.getThrowable());

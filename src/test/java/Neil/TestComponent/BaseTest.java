@@ -32,6 +32,8 @@ public class BaseTest {
 		public WebDriver driver;
 		protected BritInsurance britLandingPg;
 		
+		//This method lets the driver know what configurations need to done for the browser while initializing
+		// like browser type, headless mode etc
 		public WebDriver initialiseDriver() throws IOException
 		{
 			//properties class
@@ -68,6 +70,7 @@ public class BaseTest {
 		}
 		
 		@BeforeMethod(alwaysRun = true)
+		//First method to execute while running the test case - driver is initialized and object of class BritInsurance is created
 		public BritInsurance launchApplication() throws IOException
 		{
 			driver = initialiseDriver();
@@ -76,11 +79,13 @@ public class BaseTest {
 		}
 
 		@AfterMethod(alwaysRun =  true)
+		//Method is responsible for closing the driver
 		public void teardown()
 		{
 			driver.close();
 		}
 		
+		//Method fetches the data from the jason file and returns a list of HashMap with the data
 		public List<HashMap<String, String>> getJsonDataToMap(String filePath) throws IOException
 		{
 			//Reads jason file to String
@@ -93,6 +98,8 @@ public class BaseTest {
 			return data;
 		}
 		
+		//Method responsible for taking screenshot, a screnshot is taken and then moved to the target location and will return the 
+		// file source path
 		public String getScreenShot(String testCaseName, WebDriver driver) throws IOException
 		{
 			TakesScreenshot ts = (TakesScreenshot)driver;
