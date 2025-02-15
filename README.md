@@ -1,65 +1,73 @@
 
-# Automating an Ecommerce Website
+# Automating Brit Insurance
 
-Following features were used to develop the Automation Framework
-
+API Automation Testing using Cucumber, Rest Assured
 
 ## Features
 
-- Maven : 
-Project was build using Maven Structured Framework with all necessary Automation dependencies
+📌 Technologies & Tools Used
 
-- Page object Model : 
-Page object Model mechanism was implemented to drive the locators from respective classes
+✅ Java – Language for automation
 
-- Encapsulating Driver : 
- Drive object creation within Page object classes encapsulating it from Tests
+✅ Rest Assured – API Testing Framework
 
- - Global properties : 
- Created Base Test which sets browser configuration details and Global properties
+✅ Cucumber – BDD Testing Framework
 
-- Test Strategy : 
- Tests can be clubbed & distributed with appropriate annotations
+✅ TestNG – Test Execution Framework
 
- -  TestNG runner : 
- Created TestNG runner file to trigger the tests with one Single point of execution control
+✅ Maven – Build Management
 
- - Grouping in TestNG.xml : 
- Introduced Grouping in TestNG.xml to categorize tests with different tags of execution
-
- - Data driven testing & Parameterization : 
-  Implemented Data driven testing & Parameterization using TestNG Data provider HashMap & Json File readers
-
-- TestNG Listeners : 
-Implemented TestNG Listeners to capture Screenshot on automatic test failures and logging
-
-- Extent Report wrapper : 
-Create Extent Report wrapper to generate excellent HTML reports for the application
-
-- Parallel execution : 
- Made Framework necessary changes to support parallel execution with Thread safe mechanism
-
-- TestNG retry mechanism : 
-Implemented TestNG retry mechanism to rerun the failed flaky tests in the application
-
-- TestNG Maven integration plugin : 
-Ran the Framework tests with Maven commands with TestNG Maven integration plugin
-
-- Run time variables : 
-Implemented Maven Run time variables to replace global parameters of test data at runtime
-
-- Jenkins : 
-Integrateed the Framework with Jenkins with parameterized Build pipeline jobs & schedule the jobs on specific time frames.
-
-- Cucumber wrapper : 
-Added Cucumber wrapper to existing framework with cucumber TestNg runner
-- Feature file : 
-Created Feature file & step definitions to support cucumber execution of selenium tests
+✅ Cucumber Reports – Test Reporting
 
 
 
 
 
+
+## Test Scripts
+
+Test Scrips are located under : 
+ > src/test/java/Neil.StepDefinition
+    1.BritnInsuranceTestCaseAPI.java
+    2.BritnInsuranceTestCaseUI.java
+
+Page Object Model folder structre is kept to prepare all the action methods and is located under :
+> src/main/java/Neil.PageObjects
+
+
+All the Scenarios was developed in the Cucumber Feature file which is located in : 
+
+>   src/test/java/Cucumber
+    1.BritInsurance.feature
+    2.BritInsuranceAPI.feature
+## Running Tests
+
+1️⃣ Run All Scenarios : Execute all Cucumber tests using Maven
+
+```bash
+  mvn test
+```
+2️⃣ Run Specific Scenarios Using Tags
+
+```bash
+  mvn test -Dcucumber.options="--tags @Functional"
+```
+3️⃣Run Tests Using TestNG Runner
+
+    Open src\test\java\Cucumber
+    Open TestNgTestRunner.java
+    Right-click and select "Run as TestNG Test"
+
+## Reports & Logs
+
+
+1️⃣ Cucumber HTML Report
+After execution, the Cucumber HTML Report is generated at:
+
+    > target/cucumber.html
+
+2️⃣ Console Logs
+Test execution logs are displayed in the Eclipse console.
 
 
 

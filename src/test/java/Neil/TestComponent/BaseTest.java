@@ -24,13 +24,13 @@ import org.testng.annotations.BeforeMethod;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import Neil.pageObjects.BritInsurance;
+import Neil.PageObjects.BritInsurance;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
 	
 		public WebDriver driver;
-		protected BritInsurance britLandingPage;
+		protected BritInsurance britLandingPg;
 		
 		public WebDriver initialiseDriver() throws IOException
 		{
@@ -71,8 +71,8 @@ public class BaseTest {
 		public BritInsurance launchApplication() throws IOException
 		{
 			driver = initialiseDriver();
-			britLandingPage = new BritInsurance(driver);
-			return britLandingPage;
+			britLandingPg = new BritInsurance(driver);
+			return britLandingPg;
 		}
 
 		@AfterMethod(alwaysRun =  true)

@@ -1,4 +1,4 @@
-package Neil.pageObjects;
+package Neil.PageObjects;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -8,9 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import Neil.AbstractComponents.abstractComponent;
+import Neil.AbstractComponents.AbstractComponent;
 
-public class BritInsurance extends abstractComponent{
+
+public class BritInsurance extends AbstractComponent{
 	
 	WebDriver driver;
 	
@@ -36,6 +37,7 @@ public class BritInsurance extends abstractComponent{
 		Thread.sleep(6000);
 	}
 	
+	//Method performs clicking on the search button and passing the search Keyword
 	public List<String> getSearchElements(String strSearchKey)
 	{
 		SearchButton.click();
