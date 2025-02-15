@@ -1,4 +1,4 @@
-package selenium.TestComponent;
+package selenium.testComponent;
 
 import java.io.IOException;
 
@@ -11,7 +11,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-import selenium.Resources.ExtendReportNG;
+import selenium.resources.ExtendReportNG;
 
 
 public class Listeners extends BaseTest implements ITestListener {

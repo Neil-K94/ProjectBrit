@@ -1,4 +1,4 @@
-package cucumber.StepDefinition;
+package cucumber.stepDefinition;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -11,8 +11,8 @@ import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import selenium.PageObjects.*;
-import selenium.TestComponent.BaseTest;
+import selenium.pageObjects.*;
+import selenium.testComponent.BaseTest;
 
 public class BritInsuranceTestCaseUI extends BaseTest{
 

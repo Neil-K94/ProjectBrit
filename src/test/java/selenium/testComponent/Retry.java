@@ -1,4 +1,4 @@
-package selenium.TestComponent;
+package selenium.testComponent;
 
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;

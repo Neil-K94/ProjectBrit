@@ -1,4 +1,4 @@
-package selenium.TestComponent;
+package selenium.testComponent;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -25,7 +25,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import selenium.PageObjects.BritInsurance;
+import selenium.pageObjects.BritInsurance;
 
 public class BaseTest {
 	

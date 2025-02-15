@@ -1,4 +1,4 @@
-package selenium.PageObjects;
+package selenium.pageObjects;
 
 import java.util.List;
 import java.util.stream.Collectors;
